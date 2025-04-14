@@ -7,6 +7,7 @@ export const runtime = 'edge';
 
 const app = new Hono().basePath('/api');
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const routes = app.route('/authors', authors).route('/books', books);
 
 export const GET = handle(app);
